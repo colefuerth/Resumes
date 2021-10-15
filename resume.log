@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.10.5)  15 OCT 2021 14:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.10.5)  15 OCT 2021 14:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -404,7 +404,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  71i,11n,75p,366b,364s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_i3ioen.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/fira/FiraMono-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvri.pfb>
-Output written on "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.pdf" (1 page, 126939 bytes).
+Output written on "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.pdf" (1 page, 126937 bytes).
 PDF statistics:
  68 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

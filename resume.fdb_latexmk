@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1634322961 "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.tex" "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.pdf" "resume" 1634322962
+["pdflatex"] 1634323781 "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.tex" "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.pdf" "resume" 1634323781
   "/etc/texmf/web2c/texmf.cnf" 1633446308 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.aux" 1634322962 1084 fdeab66ddf71a7feba0402eaaff0ffce ""
-  "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.tex" 1634322961 9027 3ee5201a034caa847dbfb094ac150216 ""
+  "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.aux" 1634323781 1084 fdeab66ddf71a7feba0402eaaff0ffce ""
+  "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.tex" 1634323780 9019 7e9be7b66206c051dfcb77ccd7ec315d ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fira/fir_i3ioen.enc" 1570828436 2862 216913a462814c3772679fedc1bbde0e ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1585083055 2911 7adff171bd8c0a41152be2ab1520c87f ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1585083055 3040 a74211a8f4718d9997628e5616b4ef48 ""
@@ -123,13 +123,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1613593815 38841 799d1dd9682a55ce442e10c99777ecc1 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1633713547 4819188 31b34b99b40510088e0fa15a6307fb56 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1633446743 1283512 019f9ce1cd5a853b9f1033958e69078b ""
-  "resume.aux" 1634322962 1084 fdeab66ddf71a7feba0402eaaff0ffce "pdflatex"
-  "resume.out" 1634322962 132 1a61f32f1971c910540fe51322d7fdbf "pdflatex"
-  "resume.tex" 1634322961 9027 3ee5201a034caa847dbfb094ac150216 ""
+  "resume.aux" 1634323781 1084 fdeab66ddf71a7feba0402eaaff0ffce "pdflatex"
+  "resume.out" 1634323781 132 1a61f32f1971c910540fe51322d7fdbf "pdflatex"
+  "resume.tex" 1634323780 9019 7e9be7b66206c051dfcb77ccd7ec315d ""
   (generated)
-  "resume.log"
   "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.log"
-  "resume.pdf"
   "resume.aux"
-  "resume.out"
+  "resume.pdf"
   "/home/cole/X/My Stuff/Document Drawer/Resumes/resume.pdf"
+  "resume.out"
+  "resume.log"
