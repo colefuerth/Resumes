@@ -1,5 +1,8 @@
 
 # do not want to track temp files or logs, but we do want to track the .tex and .pdf files
-resume.*
-!resume.pdf
-!resume.tex
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
