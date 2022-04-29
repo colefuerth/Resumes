@@ -2,11 +2,8 @@
 % Resume in Latex
 % Author : Cole Fuerth
 % Based off of: https://github.com/jakeryang/resume
-% editing link at https://www.overleaf.com/project/615c6592f73f54049d9989a7
 %-----------------------
 
-% TODO: Add skills
-% C/C++, Java, Python, Arduino, Embedded STM, Raspberry Pi, 3D Printing, Windows, Linux
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -140,97 +137,107 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\Huge Cole Fuerth} \\ \vspace{5pt}
-    \hspace{1pt} \faEnvelope \hspace{2pt} \href{mailto::colefuerth@gmail.com}{\texttt{colefuerth@gmail.com}} \hspace{1pt} $|$ 
-    \hspace{1pt} \faGithub \hspace{2pt} \href{https://github.com/SquareWheelBike}{\texttt{SquareWheelBike}} \hspace{1pt} $|$
-    \hspace{1pt} \faLinkedin \hspace{2pt} \href{https://www.linkedin.com/in/cole-fuerth-48344520a/}{\texttt{Cole Fuerth}} \hspace{1pt} $|$
-    \small \faPhone* \texttt{519.300.2877} 
-    \\ \vspace{-3pt}
+  \textbf{\Huge Cole Fuerth} \\ \vspace{5pt}
+  \hspace{1pt} \faEnvelope \hspace{2pt} \href{mailto::colefuerth@gmail.com}{\texttt{colefuerth@gmail.com}} \hspace{1pt} $|$
+  \hspace{1pt} \faGithub \hspace{2pt} \href{https://github.com/SquareWheelBike}{\texttt{SquareWheelBike}} \hspace{1pt} $|$
+  \hspace{1pt} \faLinkedin \hspace{2pt} \href{https://www.linkedin.com/in/cole-fuerth-48344520a/}{\texttt{Cole Fuerth}} \hspace{1pt} $|$
+  \small \faPhone* \texttt{519.300.2877}
+  \\ \vspace{-3pt}
 \end{center}
 
 
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-    \resumeSubheading
-      {Centerline Ltd.}{May. 2019 -- Sept. 2020}
-      {Controls Engineering Technician}{Windsor, ON}
-      \resumeItemListStart
-        \resumeItem{Set-up and debugged industry-standard production machines.}
-        \resumeItem{Programmed Rockwell PLCs, FANUC robots, and various other misc. industry devices.}
-        \resumeItem{Integrated new industry devices with PLCs, such as date scribes, torque units, and cameras.}
+\resumeSubheading
+{University of Windsor}{Jan. 2022 -- Present}
+{Research Assistant}{Windsor, ON}
+\resumeItemListStart
+\resumeItem{Assisted masters students in developing data collection tools for the study of Battery Management System (BMS) performance.}
+\resumeItem{Made a dynamic interface between I2C/UART on Arduino and Python over USB using JSON packets, allowing for real-time data collection and analysis.}
 
-    \resumeItemListEnd
-    
-    \resumeSubheading
-      {St. Clair College}{May 2018 -- April 2020}
-      {Audiovisual/IT Support, Tutor}{Windsor, ON}
-      \resumeItemListStart
-        %\resumeItem{Provided AV support for St. Clair College.}
-        \resumeItem{Debugged classroom projectors and audio systems, repaired and assembled old or new audio devices, and supported any internal or external events.}
-        \resumeItem{Worked in the tutoring department, tutoring programming (\textbf{C, C\#, Java, Ladder}), Differential/Integral Calculus, Physics, Chemistry, and Electrical Circuit Design.}
-      \resumeItemListEnd
+\resumeItemListEnd
 
-  \resumeSubHeadingListEnd
-  
+\resumeSubheading
+{Centerline Ltd.}{May. 2019 -- Sept. 2020}
+{Controls Engineering Technician}{Windsor, ON}
+\resumeItemListStart
+\resumeItem{Set-up and debugged industry-standard production machines.}
+\resumeItem{Programmed Rockwell PLCs, FANUC robots, and various other misc. industry devices.}
+\resumeItem{Integrated new industry devices with PLCs, such as date scribes, torque units, and cameras.}
+
+\resumeItemListEnd
+
+% \resumeSubheading
+%   {St. Clair College}{May 2018 -- April 2020}
+%   {Audiovisual/IT Support, Tutor}{Windsor, ON}
+%   \resumeItemListStart
+%     %\resumeItem{Provided AV support for St. Clair College.}
+%     \resumeItem{Debugged classroom projectors and audio systems, repaired and assembled old or new audio devices, and supported any internal or external events.}
+%     \resumeItem{Worked in the tutoring department, tutoring programming (\textbf{C, C\#, Java, Ladder}), Differential/Integral Calculus, Physics, Chemistry, and Electrical Circuit Design.}
+%   \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
 
 %-----------PROJECTS-----------
 
 \section{PROJECTS}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\href{https://github.com/SquareWheelBike/ElectricMotorcycle}{\textbf{Electric Motorcycle}}} {Sept. 2019 -- Mar. 2020}
-          \resumeItemListStart
-            \resumeItem{Programmed and assembled an electric dirt-bike.}
-            \resumeItem{Assembled using an \textbf{Arduino Mega} for control with \textbf{C++}, a touchscreen display, custom aluminum panels, isolated inputs and outputs, and \textbf{all-custom power distribution and analog sensing}, mounted on a stripped frame.}
-            \resumeItem{This project was my capstone for Electronics Engineering Technology.}
-            %\resumeItem{Project repository available \href{https://github.com/SquareWheelBike/ElectricMotorcycle}{\textbf{Electric Motorcycle}}.}
-          \resumeItemListEnd
-          
-        \resumeProjectHeading
-          {\href{https://github.com/SquareWheelBike/AirRide}{\textbf{Air Suspension System}}}{Apr. 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Designed firmware and interface, assisted in choosing hardware and sensors for an Air-Ride suspension system for vintage cars.}
-            \resumeItem{Device had active telemetry, height and PSI modes, and user profiles.}
-            \resumeItem{Firmware done in \textbf{C++} on an \textbf{Arduino Micro}; User display written in \textbf{Python} on a \textbf{Raspberry Pi}.}
-          \resumeItemListEnd
-          
-      \resumeProjectHeading
-         {\textbf{Electric Long-boards}}{Aug. 2020 -- Present}
-          \resumeItemListStart
-            \resumeItem{Built a custom electric long board, now selling pre-built boards from a company, \textbf{BoardBoys}.}
-            \resumeItem{Batteries are a \textbf{completely custom design}, built with 21700 Lithium cells.}
-            %\resumeItem{Built to beat all current competitors, for the same price. 40kph top speed, and 35km range.}
-            \resumeItem{\href{https://github.com/SquareWheelBike/WinHacks}{\textbf{Won first place}} in the hardware category at WinHacks 2021, by passing telemetry over \textbf{UART} from the ESC to a \textbf{Raspberry Pi}.}
-          \resumeItemListEnd
-          
-    \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\href{https://github.com/SquareWheelBike/ElectricMotorcycle}{\textbf{Electric Motorcycle}}} {Sept. 2019 -- Mar. 2020}
+\resumeItemListStart
+\resumeItem{Programmed and assembled an electric dirt-bike.}
+\resumeItem{Assembled using an \textbf{Arduino Mega} for control with \textbf{C++}, a touchscreen display, custom aluminum panels, isolated inputs and outputs, and \textbf{all-custom power distribution and analog sensing}, mounted on a stripped frame.}
+\resumeItem{This project was my capstone for Electronics Engineering Technology.}
+%\resumeItem{Project repository available \href{https://github.com/SquareWheelBike/ElectricMotorcycle}{\textbf{Electric Motorcycle}}.}
+\resumeItemListEnd
 
-    
+\resumeProjectHeading
+{\href{https://github.com/SquareWheelBike/AirRide}{\textbf{Air Suspension System}}}{Apr. 2020 -- Present}
+\resumeItemListStart
+\resumeItem{Designed firmware and interface, assisted in choosing hardware and sensors for an Air-Ride suspension system for vintage cars.}
+\resumeItem{Device had active telemetry, height and PSI modes, and user profiles.}
+\resumeItem{Firmware done in \textbf{C++} on an \textbf{Arduino Micro}; User display written in \textbf{Python} on a \textbf{Raspberry Pi}.}
+\resumeItemListEnd
 
-    %-----------EDUCATION-----------
-    \section {EDUCATION}
-    
-    \resumeSubHeadingListStart
-      \resumeSubheading
-        {University of Windsor}{Sept. 2020 -- Present}
-        {Computer Science (Honours)}{Windsor, ON}
-          \resumeItemListStart
-        \resumeItem {Coursework: C/C++ Programming, Differential Calculus, Assembly, Python, Java, Data Structures \& Algorithms, Systems Programming (Linux with C), Software Engineering, AI Concepts}
-        \resumeItem {\textbf{89 Major Average}; received Dean's List for most recent completed class year.}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeProjectHeading
+{\textbf{Electric Long-boards}}{Aug. 2020 -- Present}
+\resumeItemListStart
+% \resumeItem{Built a custom electric long board, now selling pre-built boards from a company, \textbf{BoardBoys}.}
+\resumeItem{Electronics enclosure designed and 3d printed, with custom wiring.}
+\resumeItem{Batteries are a \textbf{completely custom design}, built with 21700 Lithium cells.}
+%\resumeItem{Built to beat all current competitors, for the same price. 40kph top speed, and 35km range.}
+\resumeItem{\href{https://github.com/SquareWheelBike/WinHacks}{\textbf{Won first place}} in the hardware category at WinHacks 2021, by passing telemetry over \textbf{UART} from the ESC to a \textbf{Raspberry Pi}.}
+\resumeItemListEnd
 
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {St. Clair College}{Sept. 2017 -- May 2020}
-      {Electronics Engineering Technology, Associate Degree}{Windsor, ON}
-      	\resumeItemListStart
-    	\resumeItem {Coursework: DC and AC circuit analysis, analog signals processing, digital systems, C language and PLC programming, microprocessor, and micro-controller programming}
-    	\resumeItem {\textbf{3.9 Cumulative GPA}; received the Student Leadership Award for graduating class year}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListEnd
+
+
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of Windsor}{Sept. 2020 -- Present}
+{Computer Science (Honours)}{Windsor, ON}
+\resumeItemListStart
+\resumeItem {Coursework: C/C++ Programming, Differential Calculus, Assembly, Python, Java, Data Structures \& Algorithms, Systems Programming (Linux with C), Software Engineering, AI Concepts}
+\resumeItem {\textbf{89\% Major Average}; received Dean's List for most recent completed class year.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{St. Clair College}{Sept. 2017 -- May 2020}
+{Electronics Engineering Technology, Associate Degree}{Windsor, ON}
+\resumeItemListStart
+\resumeItem {Coursework: DC and AC circuit analysis, analog signals processing, digital systems, C language and PLC programming, microprocessor, and micro-controller programming}
+\resumeItem {\textbf{3.9 Cumulative GPA}; received the Student Leadership Award for graduating class year}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 
 %
