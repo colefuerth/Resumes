@@ -5,277 +5,48 @@
 % Based off of: https://github.com/jakeryang/resume
 %-----------------------
 
-
-\documentclass[letterpaper,11pt]{article}
-
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-% only for pdflatex
-% \input{glyphtounicode}
-
-% fontawesome
-\usepackage{fontawesome5}
-
-% fixed width
-\usepackage[scale=0.90,lf]{FiraMono}
-
-% light-grey
-\definecolor{light-grey}{gray}{0.83}
-\definecolor{dark-grey}{gray}{0.3}
-\definecolor{text-grey}{gray}{.08}
-
-\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
-\DeclareTextFontCommand{\texteb}{\ebseries}
-
-% custom underline
-\usepackage{contour}
-\usepackage[normalem]{ulem}
-\renewcommand{\ULdepth}{1.8pt}
-\contourlength{0.8pt}
-\newcommand{\myuline}[1]{%
-  \uline{\phantom{#1}}%
-  \llap{\contour{white}{#1}}%
-}
-
-
-% custom font: helvetica-style
-\usepackage{tgheros}
-\renewcommand*\familydefault{\sfdefault} 
-%% Only if the base font of the document is to be sans serif
-\usepackage[T1]{fontenc}
-
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{0in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-
-\urlstyle{same}
-
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Sections formatting - serif
-% \titleformat{\section}{
-%   \vspace{2pt} \scshape \raggedright\large % header section
-% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
-
-% TODO EBSERIES
-% sans serif sections
-\titleformat {\section}{
-    \bfseries \vspace{2pt} \raggedright \large % header section
-}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
-
-% only for pdflatex
-% Ensure that generate pdf is machine readable/ATS parsable
-% \pdfgentounicode=1
-
-%-------------------------
-% Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-1pt}}
-  }
-}
-
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
-      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
-    \end{tabular*}\vspace{-4pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-      #1 & {\color{dark-grey}} \\
-    \end{tabular*}\vspace{-4pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-% CHANGED default leftmargin  0.15 in
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
-
-\color{text-grey}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\input{./src/setup.tex}
 
 \begin{document}
 
 %----------HEADING----------
-\begin{center}
-  \textbf{\Huge Cole Fuerth} \\ \vspace{5pt}
-  \hspace{1pt} \faEnvelope \hspace{2pt} \href{mailto::colefuerth@gmail.com}{\texttt{colefuerth@gmail.com}} \hspace{1pt} $|$
-  \hspace{1pt} \faGithub \hspace{2pt} \href{https://github.com/colefuerth}{\texttt{colefuerth}} \hspace{1pt} $|$
-  \hspace{1pt} \faLinkedin \hspace{2pt} \href{https://www.linkedin.com/in/cole-fuerth-48344520a/}{\texttt{Cole Fuerth}} \hspace{1pt} $|$
-  \small \faPhone* \texttt{519.300.2877}
-  \\ \vspace{-3pt}
-\end{center}
-
+\input{./src/heading.tex}
 
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
 \resumeSubHeadingListStart
 
-\resumeSubheading
-{University of Windsor}{Jan. 2022 -- Present}
-{Research Assistant}{Windsor, ON}
-\resumeItemListStart
-\resumeItem{Developed a cloud-based data collection and SOC-estimation tool for Battery Management Systems using \textbf{TensorFlow}, \textbf{AWS}, \textbf{RabbitMQ}  and \textbf{MongoDB}. Programmed in \textbf{C++} and \textbf{Python}}
-% \resumeItem{Assisted in programming-focused battery research ventures for the Department of Electrical and Computer Engineering at the University of Windsor for Dr. Bala Balasingam.}
-\resumeItem{Assisted MASc students in developing data collection tools for the study of Battery Management System (BMS) performance and Batter Thermal Management Systems (BTMS) prediction.}
-% \resumeItem{Developed real-world demonstrations of thesises and projects.}
-\resumeItem{Made a dynamic interface between \textbf{I2C/UART} on \textbf{Arduino} and \textbf{Python} over USB using JSON packets, allowing for real-time data collection and analysis.}
-\resumeItemListEnd
-
-% TODO: add RD400 as experience
-
-\resumeSubheading
-{Smyth Innovations}{November 2021 -- July 2022}
-{Embedded Engineer}{Chatham, ON}
-\resumeItemListStart
-\resumeItem{Developed a custom ECU for an \href{https://github.com/SquareWheelBike/RD400}{\underline{RD400}} motorcycle using \textbf{EasyEDA} for board design, and \textbf{C++} for software development.}
-\resumeItem{Custom wiring and PCB assembly done by hand.}
-\resumeItemListEnd
-
-% \resumeSubheading
-% {Centerline Ltd.}{May. 2019 -- Sept. 2020}
-% {Controls Engineering Technician}{Windsor, ON}
-% \resumeItemListStart
-% \resumeItem{Set-up and debugged industry-standard production machines.}
-% \resumeItem{Programmed Rockwell PLCs, FANUC robots, and various other misc. industry devices.}
-% \resumeItem{Integrated new industry devices with PLCs, such as date scribes, torque units, and cameras.}
-% \resumeItemListEnd
-
-% \resumeSubheading
-%   {St. Clair College}{May 2018 -- April 2020}
-%   {Audiovisual/IT Support, Tutor}{Windsor, ON}
-%   \resumeItemListStart
-%     %\resumeItem{Provided AV support for St. Clair College.}
-%     \resumeItem{Debugged classroom projectors and audio systems, repaired and assembled old or new audio devices, and supported any internal or external events.}
-%     \resumeItem{Worked in the tutoring department, tutoring programming (\textbf{C, C\#, Java, Ladder}), Differential/Integral Calculus, Physics, Chemistry, and Electrical Circuit Design.}
-%   \resumeItemListEnd
+\input{./src/experience/research.tex}
+\input{./src/experience/smyth.tex}
+% \input{./src/experience/centerline.tex}
+% \input{./src/experience/scc.tex}
 
 \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 
 \section{PROJECTS}
-
 \resumeSubHeadingListStart
 
-\resumeProjectHeading
-{\href{https://github.com/SquareWheelBike/ElectricMotorcycle}{\textbf{Electric Motorcycle}}} {Sept. 2019 -- Mar. 2020}
-\resumeItemListStart
-\resumeItem{Programmed and assembled an electric dirt-bike.}
-\resumeItem{Assembled using an \textbf{Arduino Mega} for control with \textbf{C++}, a touchscreen display, custom aluminum panels, isolated inputs and outputs, and \textbf{all-custom power distribution and analog sensing}, mounted on a stripped frame.}
-% \resumeItem{This project was my capstone for Electronics Engineering Technology.}
-%\resumeItem{Project repository available \href{https://github.com/SquareWheelBike/ElectricMotorcycle}{\textbf{Electric Motorcycle}}.}
-\resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Home Server}}{}
-\resumeItemListStart
-\resumeItem{Host a \textbf{Docker}-ized home server using \textbf{Ubuntu Server}. Before Docker, I used \textbf{shell} scripts to manage my services.}
-\resumeItem{Server hosts services including OctoPrint for 3D Printing, reverse proxy, a research database, RAID drive redundancy, a Plex media server, machine learning models, a minecraft server, cron-scheduled backup scripts, and a web interface for the server. I use it for most of my development. I made this resume on it using \LaTeX!}
-\resumeItemListEnd
-
-% \resumeProjectHeading
-% {\href{https://github.com/SquareWheelBike/AirRide}{\textbf{Air Suspension System}}}{Apr. 2020 -- Present}
-% \resumeItemListStart
-% \resumeItem{Designed firmware and interface, assisted in choosing hardware and sensors for an Air-Ride suspension system for vintage cars.}
-% \resumeItem{Device had active telemetry, height and PSI modes, and user profiles.}
-% \resumeItem{Firmware done in \textbf{C++} on an \textbf{Arduino Micro}; User display written in \textbf{Python} on a \textbf{Raspberry Pi}.}
-% \resumeItemListEnd
-
-\resumeProjectHeading
-{\textbf{Electric Long-boards}}{Aug. 2020 -- Present}
-\resumeItemListStart
-% \resumeItem{Built a custom electric long board, now selling pre-built boards from a company, \textbf{BoardBoys}.}
-\resumeItem{Electronics enclosure designed and 3d printed, with custom wiring.}
-\resumeItem{Batteries are a \textbf{completely custom design}, built with 21700 Lithium cells.}
-%\resumeItem{Built to beat all current competitors, for the same price. 40kph top speed, and 35km range.}
-\resumeItem{\href{https://github.com/SquareWheelBike/WinHacks}{\textbf{Won first place}} in the hardware category at WinHacks 2021, by passing telemetry over \textbf{UART} from the ESC to a \textbf{Raspberry Pi}.}
-\resumeItemListEnd
+\input{./src/projects/electricmotorcycle.tex}
+\input{./src/projects/server.tex}
+% \input{./src/projects/airride.tex}
+\input{./src/projects/longboards.tex}
 
 \resumeSubHeadingListEnd
-
-% TODO: home server?
-
-% TODO: work through github repos and pick one, maybe add battery estimation project?
-
 
 
 %-----------EDUCATION-----------
 \section {EDUCATION}
-
 \resumeSubHeadingListStart
-\resumeSubheading
-{University of Windsor}{Sept. 2020 -- Aug. 2023}
-{Honours Computer Science with Artificial Intelligence Specialization | Minor in Mathematics}{Windsor, ON}
-\resumeItemListStart
-% \resumeItem {Coursework: C/C++ Programming, Differential Calculus, Assembly, Python, Java, Data Structures \& Algorithms, Systems Programming (Linux with C), Software Engineering, AI Concepts}
-\resumeItem {Computer Science \textbf{teaching assistant}}
-\resumeItem {Electrical Engineering \textbf{reasearch assistant} working with \textbf{Advanced Energy Storage Systems}.}
-\resumeItem {\textbf{89\% Major Average}; received Dean's List for each completed class year.}
-\resumeItemListEnd
+
+\input{./src/education/uwin.tex}
+\input{./src/education/scc.tex}
+
 \resumeSubHeadingListEnd
 
-\resumeSubHeadingListStart
-\resumeSubheading
-{St. Clair College}{Sept. 2017 -- May 2020}
-{Electronics Engineering Technology, Associate Degree}{Windsor, ON}
-\resumeItemListStart
-\resumeItem {Skills gained involve DC and AC circuit analysis, analog signals processing, digital systems, C language and PLC programming, micro-controller programming and PCB design and assembly.}
-\resumeItem {\textbf{3.9 Cumulative GPA}; received the Student Leadership Award for graduating class year}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-
-%
 %-----------PROGRAMMING SKILLS-----------
-%\section{SKILLS}
-% \begin{itemize}[leftmargin=0in, label={}]
-%    \small{\item{
-%     \textbf{Languages} {: Python, JavaScript (React.js), HTML/CSS, SQL (PostgreSQL, MySQL)}\vspace{2pt} \\
-%     \textbf{Tools}     {: Figma, Notion, Jira, Trello, Miro, Google Analytics, GitHub, DaVinci Resolve, OBS}
-%    }}
-% \end{itemize}
 
+% \input{./src/skills.tex}
 
-%-------------------------------------------
 \end{document}
