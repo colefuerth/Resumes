@@ -39,12 +39,12 @@
 %                   Document adjustments
 %_______________________________________________________________
 \geometry{%
-        left=23mm,
-        right=23mm, 
-        bindingoffset=0mm, 
-        top=20mm,
-        bottom=20mm
-    }
+  left=23mm,
+  right=23mm,
+  bindingoffset=0mm,
+  top=20mm,
+  bottom=20mm
+}
 %
 \newcommand{\linia}{\rule{\linewidth}{0.5pt}}
 \newcommand{\dotline}{\noindent\textcolor{soft_text}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
@@ -62,9 +62,9 @@
 }
 % Date command:
 \renewcommand\date[2]{%
-    \@namedef{Date#2}{%
+  \@namedef{Date#2}{%
     #1
-    }%
+  }%
 }
 % Adress command
 \newcommand\ProvideAdress[3]{%
@@ -86,27 +86,27 @@
 }
 % Signature command:
 \newcommand\Signature[3]{%
-#1 \\
-\begin{minipage}{0.6\textwidth}
-\vspace{\baselineskip}
-\includegraphics[#3]{#2}
-\end{minipage} 
-\vspace{\baselineskip} \\
-\makeatletter
-\@author
-\makeatother
+  #1 \\
+  \begin{minipage}{0.6\textwidth}
+    \vspace{\baselineskip}
+    \includegraphics[#3]{#2}
+  \end{minipage}
+  \vspace{\baselineskip} \\
+  \makeatletter
+  \@author
+  \makeatother
 }
 % Signature line command_
 \newcommand{\SignatureLine}[2]{%
-#1 \\
-\begin{minipage}{0.6\textwidth}
-\vspace{3\baselineskip}
-\makebox[#2]{\hrulefill}
-\end{minipage} 
-\vspace{\baselineskip} \\
-\makeatletter
-\@author
-\makeatother
+  #1 \\
+  \begin{minipage}{0.6\textwidth}
+    \vspace{3\baselineskip}
+    \makebox[#2]{\hrulefill}
+  \end{minipage}
+  \vspace{\baselineskip} \\
+  \makeatletter
+  \@author
+  \makeatother
 }
 %................................................................
 %
@@ -137,7 +137,7 @@
 %                               Other 
 %_______________________________________________________________
 \AtBeginDocument{%
-    \hypersetup{hidelinks}
+  \hypersetup{hidelinks}
 }
 %................................................................
 %
