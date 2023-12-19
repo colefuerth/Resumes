@@ -1,1 +1,0 @@
-rm -vf *.gz *.aux *.fdb_latexmk *.fls *.log
