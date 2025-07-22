@@ -53,8 +53,8 @@
 % TODO EBSERIES
 % sans serif sections
 \titleformat {\section}{
-  \bfseries \vspace{2pt} \raggedright \large % header section
-}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+  \bfseries \vspace{1pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-6pt}]
 
 % only for pdflatex
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -69,11 +69,11 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item
   \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+    \textbf{#1} & {\color{dark-grey}\small #2}\vspace{0pt}\\ % top row of resume entry
     \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
-  \end{tabular*}\vspace{-4pt}
+  \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -87,7 +87,7 @@
   \item
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
     #1 & {\color{dark-grey}} \\
-  \end{tabular*}\vspace{-4pt}
+  \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -98,6 +98,6 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
     \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 \color{text-grey}
