@@ -6,3 +6,6 @@
 *.log
 *.out
 *.synctex.gz
+
+# nix stuff
+result
