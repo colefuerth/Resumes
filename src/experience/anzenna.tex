@@ -2,12 +2,16 @@
 {Anzenna}{March 2026 -- Present}
 {Software Engineer}{Los Angeles, CA}
 \resumeItemListStart
-\resumeItem{Top committer to the \textbf{Go} \textbf{AI DLP} endpoint agent; own the verdict path that blocks sensitive data in Claude Code prompts and blocks or redacts it in Claude Code/Cursor tool calls (incl. \textbf{MCP}) before it reaches the AI provider.}
-\resumeItem{Took over and wrote most of a \textbf{TLS}-intercepting local proxy that enforces DLP on the Claude Desktop and ChatGPT desktop apps: parses their \textbf{SSE}, JSON-Patch and \textbf{protobuf} traffic and renders blocks as in-app messages.}
-\resumeItem{Built the \textbf{protobuf} contracts, \textbf{Gin} APIs and \textbf{React}/\textbf{TypeScript} Policy Builder controls for endpoint DLP: policy delivery, enforcement-health heartbeats, and a verdict API that scores device traffic with the browser extension's policy evaluator.}
-\resumeItem{Wrote the shared DLP detectors (SSNs, credit cards, IBANs, API keys; Luhn and mod-97 checks to cut false positives) and text extraction for Office, PDF, spreadsheet and zip/tar uploads.}
-\resumeItem{Built the first version of the \textbf{Python}/\textbf{Node.js} service on \textbf{Cloud Run} that trains custom DLP classifiers, their out-of-distribution acceptance gates, and delivery of trained heads to on-device \textbf{ONNX Runtime} inference.}
-\resumeItem{Early on, shipped insider-risk anomaly detections end to end (workstation logins, email spikes to personal domains, off-role app access via a \textbf{Gemini} classifier, new-network exfiltration) across \textbf{Go}, \textbf{PostgreSQL} and \textbf{React}.}
+\resumeItem{Top committer to the \textbf{Go} \textbf{AI DLP} endpoint agent; own the verdict path that blocks or redacts sensitive data in Claude Code/Cursor prompts and \textbf{MCP} tool calls.}
+\resumeItem{Wrote most of a \textbf{TLS}-intercepting proxy that enforces DLP on the Claude Desktop and ChatGPT apps.}
+\resumeItem{Built the \textbf{protobuf} contracts, \textbf{Gin} APIs and \textbf{React}/\textbf{TypeScript} Policy Builder for endpoint DLP.}
+\resumeItem{Wrote the shared DLP detectors (SSNs, cards, IBANs, API keys) and Office/PDF/archive text extraction.}
+\resumeItem{Built the \textbf{Python}/\textbf{Node.js} \textbf{Cloud Run} service that trains custom DLP classifiers for on-device \textbf{ONNX} inference.}
+% \resumeItem{Took over and wrote most of a \textbf{TLS}-intercepting local proxy that enforces DLP on the Claude Desktop and ChatGPT desktop apps: parses their \textbf{SSE}, JSON-Patch and \textbf{protobuf} traffic and renders blocks as in-app messages.}
+% \resumeItem{Built the \textbf{protobuf} contracts, \textbf{Gin} APIs and \textbf{React}/\textbf{TypeScript} Policy Builder controls for endpoint DLP: policy delivery, enforcement-health heartbeats, and a verdict API that scores device traffic with the browser extension's policy evaluator.}
+% \resumeItem{Wrote the shared DLP detectors (SSNs, credit cards, IBANs, API keys; Luhn and mod-97 checks to cut false positives) and text extraction for Office, PDF, spreadsheet and zip/tar uploads.}
+% \resumeItem{Built the first version of the \textbf{Python}/\textbf{Node.js} service on \textbf{Cloud Run} that trains custom DLP classifiers, their out-of-distribution acceptance gates, and delivery of trained heads to on-device \textbf{ONNX Runtime} inference.}
+% \resumeItem{Early on, shipped insider-risk anomaly detections end to end (workstation logins, email spikes to personal domains, off-role app access via a \textbf{Gemini} classifier, new-network exfiltration) across \textbf{Go}, \textbf{PostgreSQL} and \textbf{React}.}
 % \resumeItem{Moved the macOS verdict daemon from a per-user process to a per-device \textbf{launchd} system daemon that attributes each request to its OS user via \textbf{Unix-socket} peer credentials.}
 % \resumeItem{Built AI-agent governance detections: canonical \textbf{MCP} server identity, MCP server/tool block rules, config tampering and credential-extraction commands.}
 % \resumeItem{Cut 6 production releases and gated prod deploys on a successful schema migration; 500+ merged PRs across 14 repos.}
