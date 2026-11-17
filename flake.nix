@@ -18,6 +18,7 @@
             fancyhdr
             babel-english
             fontawesome5
+            accsupp
             fira
             fontaxes
             contour

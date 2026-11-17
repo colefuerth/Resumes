@@ -1,8 +1,8 @@
 %-------------------------
 % Resume in Latex
 % Author : Cole Fuerth
-% On my github: https://github.com/SquareWheelBike/Resumes
-% Based off of: https://github.com/jakeryang/resume
+% On my github: https://github.com/colefuerth/Resumes
+% Based off of: https://github.com/jakeryang/resume (MIT License)
 %-----------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -24,6 +24,8 @@
 
 % fontawesome
 \usepackage{fontawesome5}
+\usepackage{accsupp}
+\newcommand{\icon}[1]{\BeginAccSupp{ActualText={}}#1\EndAccSupp{}}
 
 % fixed width
 \usepackage[scale=0.90,lf]{FiraMono}
@@ -44,7 +46,7 @@
 \resumeSubHeadingListStart
 
 \input{./src/experience/anzenna.tex}
-\input{./src/experience/stealth.tex}
+\input{./src/experience/heaviside.tex}
 \input{./src/experience/satcom.tex}
 % \input{./src/experience/battery.tex}
 % \input{./src/experience/research.tex}

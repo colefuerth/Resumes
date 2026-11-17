@@ -1,6 +1,6 @@
 # Resumes
 
-I organize my resume in here, the latest is always Cole_Fuerth_Resume.pdf.
+I organize my resume in here, the latest is always [Cole_Fuerth_resume.pdf](./Cole_Fuerth_resume.pdf).
 
 ## building
 
